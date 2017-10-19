@@ -12,7 +12,7 @@ yum -y install epel-release &&
 yum -y install chrony ntp syslog-ng rsyslog unzip curl git aide &&
 # yum -y install chage python-novaclient python-keystoneclient figlet
 yum -y remove telnet &&
-yum -y remove openssh-server &&
+# yum -y remove openssh-server &&
 
 chmod 744 /usr/sbin/aide &&
 # aide --init &&
@@ -270,7 +270,7 @@ chmod og-rwx /etc/at.allow
 chown root:root /etc/cron.allow
 chown root:root /etc/at.allow
 
-yum -y install openssh-server
+# yum -y install openssh-server
 chkconfig sshd on
 
 chown root:root /etc/ssh/sshd_config
